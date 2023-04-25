@@ -1,6 +1,6 @@
-## Awesome papers about DP, Fairness, ML and infection prediction
+# Awesome papers about DP, Fairness, ML and infection prediction
 
-### ML x Fariness
+## ML x Fariness
 - **Equality of Opportunity in Supervised Learning (NIPS’16)**
   - Introducing equalized odds instead of demographic parity as fairness definition. Proposing post-processing-based method. Sensitive label information is needed at the time of forecasting to adjust the predicted results.
 - **A Reductions Approach to Fair Classification (ICML’18)**
@@ -13,7 +13,7 @@
   - Proposed method optimizes accuracy and fairness together. In addition to the usual loss function, adding a simple constraint term such that the fairness constraint is satisfied within a (mini)batch.
 
 
-### DP x Fairness
+## DP x Fairness
 - **On the Compatibility of Privacy and Fairness (UMAP’19)**
   - proved that strict fairness does not hold at all when DP is satisfied. Proof error is pointed out in **Trade-Offs between Fairness and Privacy in Machine Learning** in 2021.
 
@@ -29,7 +29,7 @@
 - **Post-processing of differentially private data: A fairness perspective. (IJCAI’22)**
   - Post-processing on data with guaranteed DP creates a bias in the output data that propagates to downstream tasks. This paepr analyzes the impact from a fairness perspective.
 
-#### DP-ML x Fairness
+### DP-ML x Fairness
 
 - **Differentially Empirical Risk Minimization under the Fairness Lens (NIPS’21)**
   - The paper analyzes how two private optimization techniques, output perturbation and DP-SGD, affect fairness for the ERM problem. Overall, the problem is difficult and the analysis is often vague, but some general suggestions are made.
@@ -47,7 +47,7 @@
   - Analyze fairness under the problem setting in the long-tail distribution. The analysis showed that if fairness is to be strictly maintained under (ε,δ)-DP, it is necessary to sacrifice accuracy.
 
 
-### infection x ML
+## infection x ML
 - Prediction model baseline (SOTA?)
   - **A prospective evaluation of AI-augmented epidemiology to forecast COVID-19 in the USA and Japan (npjDM’21)**
     - Proposing and evaluating infection predition model, taking differnet static and dynamic features as input and output the number infecitons, cumulative deaths and confirmed cases for each locations (such as states). The rather large, complex proposed model is evaluated on real-world data on a practical scale. All of the results look very reliable.
@@ -83,7 +83,7 @@
   - **Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans (Nat21)**
     - Showing most of published model for predicting COVID from CT scans are not useful, including from fairness perspective.
 
-###### Work with Source code. To use as unfairness baselines related to COVID-19
+#### (Work with Source code. To use as unfairness baselines related to COVID-19)
 - **A prospective evaluation of AI-augmented epidemiology to forecast COVID-19 in the USA and Japan (npjDM'21)**
   - rich resources, but too rich
 - **A fairness assessment of mobility-based COVID-19 case prediction models (arxiv'22)**
